@@ -9,10 +9,10 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 
 # Set your Tencent Cloud VectorDB configuration.
 # Replace <your-vector-db-url> with your actual external URL.
-TENCENT_VECTORDB_URL = "http://gz-vdb-dbtf4m82.sql.tencentcdb.com:8100"
+TENCENT_VECTORDB_URL = "http://gz-vdb-f2w1ru94.sql.tencentcdb.com:8100"
 TENCENT_VECTORDB_USERNAME = "root"
 # Ensure your API key is set in your environment, or replace os.environ.get("TC_API_KEY")
-API_KEY = 'Cp6MNT6erkUntajMfDKQk6DnHNhf40PiNVeKgobr'
+API_KEY = 'yVdWKRsRXCiL9W61xRkB6iYVJtK38cIxHrlNxe3C'
 
 # Create the VectorDB client.
 client = tcvectordb.RPCVectorDBClient(
