@@ -1,8 +1,13 @@
 import logging
 
-# Turn on Tenacity debug-level logging
-logging.basicConfig(level=logging.DEBUG)  
-logging.getLogger("tenacity").setLevel(logging.DEBUG)
+# only show INFO+ messages (no DEBUG)
+logging.basicConfig(level=logging.INFO)
+
+# if you still want Tenacity’s retry‐INFO but not its DEBUG chatter:
+logging.getLogger("tenacity").setLevel(logging.INFO)
+
+# if you’re also seeing fsevents debug spam, silence it:
+logging.getLogger("fsevents").setLevel(logging.WARNING)
 
 # -------------------- Tencent VectorDB Setup --------------------
 # Import Tencent Cloud VectorDB modules

@@ -83,7 +83,7 @@ if __name__ == "__main__":
                         end_date,
                         output_dir="emails",
                         num_messages=None,
-                        max_workers=5
+                        max_workers=14
                     )
                     # try:
                     #     mail.quit()
